@@ -5,6 +5,3 @@ DOMAIN,download.epicgames.com
 # EA APP下载
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,ssl-lvlt.cdn.ea.com
-
-# Xbox下载
-DOMAIN,assets1.xboxlive.com

@@ -1,2 +1,6 @@
 #BT
 PROCESS-NAME,qbittorrent_x64.exe
+
+#GAME
+PROCESS-NAME,VALORANT-Win64-Shipping.exe
+PROCESS-NAME,cs2.exe

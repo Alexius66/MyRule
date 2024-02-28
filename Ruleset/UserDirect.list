@@ -1,7 +1,2 @@
-#BT
-PROCESS-NAME,qbittorrent_x64.exe
-
-#GAME
-PROCESS-NAME,VALORANT-Win64-Shipping.exe
-PROCESS-NAME,cs2.exe
-DOMAIN-KEYWORD,download.epicgames
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,services.googleapis.cn

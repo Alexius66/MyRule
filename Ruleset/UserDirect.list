@@ -4,4 +4,4 @@ PROCESS-NAME,qbittorrent_x64.exe
 #GAME
 PROCESS-NAME,VALORANT-Win64-Shipping.exe
 PROCESS-NAME,cs2.exe
-DOMAIN-SUFFIX,fastly-download.epicgames.com
+DOMAIN,fastly-download.epicgames.com

@@ -1,0 +1,20 @@
+# 内容：Steam判断所属区域的服务器列表
+# 数量：16条
+# 直连以下域名，可以使Steam地区定位到中国，使用中国CDN，提高下载速度，但可能会影响跨区
+ext1-hkg1.steamserver.net
+ext2-hkg1.steamserver.net
+ext3-hkg1.steamserver.net
+ext4-hkg1.steamserver.net
+ext5-hkg1.steamserver.net
+ext6-hkg1.steamserver.net
+ext7-hkg1.steamserver.net
+ext1-tyo3.steamserver.net
+ext2-tyo3.steamserver.net
+ext3-tyo3.steamserver.net
+ext4-tyo3.steamserver.net
+ext1-sgp1.steamserver.net
+ext2-sgp1.steamserver.net
+ext3-sgp1.steamserver.net
+ext4-sgp1.steamserver.net
+ext1-lax1.steamserver.net
+ext2-lax1.steamserver.net

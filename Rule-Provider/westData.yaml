@@ -72,7 +72,7 @@ proxy-providers:
 
 
 proxy-groups:
-  - name: 节点选择
+  - name: 🚀 节点选择
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -122,25 +122,7 @@ proxy-groups:
       - 🇸🇬 新加坡节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-  - name: 🎮 游戏平台
-    type: select
-    proxies:
-      - 节点选择
-      - 🇭🇰 香港节点
-      - 🇹🇼 台湾节点
-      - 🇸🇬 新加坡节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
   - name: 📽️ Emby
-    type: select
-    proxies:
-      - 节点选择
-      - 🇭🇰 香港节点
-      - 🇹🇼 台湾节点
-      - 🇸🇬 新加坡节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-  - name: 🎥 Netflix
     type: select
     proxies:
       - 节点选择
@@ -158,7 +140,17 @@ proxy-groups:
       - 🇸🇬 新加坡节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-  - name: 🅱️ Bilibili港澳台
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 直接连接
+      - 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 新加坡节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+    - name: ☁️ OneDrive
     type: select
     proxies:
       - 直接连接
@@ -174,134 +166,168 @@ proxy-groups:
       - DIRECT
 
 rule-providers:
-  LocalAreaNetwork:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
-    path: ./ruleset/LocalAreaNetwork.yaml
-    interval: 86400
-  GoogleCN:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml"
-    path: ./ruleset/GoogleCN.yaml
-    interval: 86400
-  GoogleCNProxyIP:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml"
-    path: ./ruleset/GoogleCNProxyIP.yaml
-    interval: 86400
-  SteamCN:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/SteamCN.yaml"
-    path: ./ruleset/SteamCN.yaml
-    interval: 86400
-  download_domainset:
-    type: http
-    behavior: domain
-    format: text
-    interval: 43200
-    url: https://ruleset.skk.moe/Clash/domainset/download.txt
-    path: ./ruleset/download_domainset.txt
-  download_non_ip:
-    type: http
-    behavior: domain
-    format: text
-    interval: 43200
-    url: https://ruleset.skk.moe/Clash/non_ip/download.txt
-    path: ./ruleset/download_non_ip.txt
-  SteamRegionCheck:
-    type: http
-    behavior: domain
-    format: text
-    interval: 43200
-    url: https://github.com/Alexius66/MyRule/edit/main/Rule-Providers/Rules/SteamRegionCheck.txt
-    path: ./ruleset/dSteamRegionCheck.txt
-  microsoft_cdn_non_ip:
-    type: http
-    behavior: classical
-    format: text
-    interval: 43200
-    url: https://ruleset.skk.moe/Clash/non_ip/microsoft_cdn.txt
-    path: ./ruleset/microsoft_cdn_non_ip.txt
- OneDrive:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/OneDrive.yaml"
-    path: ./ruleset/OneDrive.yaml
-    interval: 86400
+  
   ai_non_ip:
     type: http
     behavior: classical
     format: text
     interval: 43200
     url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
-    path: ./ruleset/ai_non_ip.txt
-  microsoft_non_ip:
-    type: http
-    behavior: classical
-    format: text
-    interval: 43200
-    url: https://ruleset.skk.moe/Clash/non_ip/microsoft.txt
-    path: ./ruleset/microsoft_non_ip.txt
-  Steam:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Steam.yaml"
-    path: ./ruleset/Steam.yaml
-    interval: 86400
-  Xbox:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Xbox.yaml"
-    path: ./ruleset/Xbox.yaml
-    interval: 86400
-  Epic:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml"
-    path: ./ruleset/Epic.yaml
-    interval: 86400
-  Origin:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Origin.yaml"
-    path: ./ruleset/Origin.yaml
-    interval: 86400
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
-    interval: 86400
+    path: ./sukkaw_ruleset/ai_non_ip.txt
+
   stream_non_ip:
     type: http
     behavior: classical
     format: text
     interval: 43200
     url: https://ruleset.skk.moe/Clash/non_ip/stream.txt
-    path: ./ruleset/stream_non_ip.txt
+    path: ./sukkaw_ruleset/stream_non_ip.txt
+    
   stream_ip:
     type: http
     behavior: classical
     format: text
     interval: 43200
     url: https://ruleset.skk.moe/Clash/ip/stream.txt
-    path: ./ruleset/stream_ip.txt
+    path: ./sukkaw_ruleset/stream_ip.txt
 
+  microsoft_cdn_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: 
+    path: ./sukkaw_ruleset/microsoft_cdn_non_ip.txt
+
+  microsoft_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/non_ip/microsoft.txt
+    path: ./sukkaw_ruleset/microsoft_non_ip.txt
+
+  download_domainset:
+    type: http
+    behavior: domain
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/domainset/download.txt
+    path: ./sukkaw_ruleset/download_domainset.txt
+    
+  download_non_ip:
+    type: http
+    behavior: domain
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/non_ip/download.txt
+    path: ./sukkaw_ruleset/download_non_ip.txt
+
+  SteamRegionCheck:
+    type: http
+    behavior: domain
+    format: text
+    interval: 43200
+    url: https://raw.githubusercontent.com/Alexius66/MyRule/main/Rule-Providers/Rules/SteamRegionCheck.txt
+    path: ./sukkaw_ruleset/SteamRegionCheck.txt
+
+  OneDrive:
+    type: http
+    behavior: domain
+    format: text
+    interval: 43200
+    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/Providers/Ruleset/OneDrive.yaml
+    path: ./user_ruleset/OneDrive.txt
+    
+  UserProxy_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://github.com/Alexius66/MyRule/raw/main/Rule-Providers/Rules/UserProxy_non_ip.txt
+    path: ./user_ruleset/UserProxy_non_ip.txt
+
+  domestic_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/non_ip/domestic.txt
+    path: ./sukkaw_ruleset/domestic_non_ip.txt
+    
+  direct_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/non_ip/direct.txt
+    path: ./sukkaw_ruleset/direct_non_ip.txt
+    
+  global_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/non_ip/global.txt
+    path: ./sukkaw_ruleset/global_non_ip.txt
+    
+  domestic_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/ip/domestic.txt
+    path: ./sukkaw_ruleset/domestic_ip.txt
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  china_ip:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/ip/china_ip.txt
+    path: ./sukkaw_ruleset/china_ip.txt
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
     
 rules:
-  # 自定义规则
-  - RULE-SET,microsoft_cdn_non_ip,Direct
-  - RULE-SET,download_domainset,Direct
-  - RULE-SET,download_non_ip,Direct
-  - RULE-SET,SteamRegionCheck,Direct
-
-
-
-
+  # 自定义规则rules:
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,download_domainset,DIRECT
+  - RULE-SET,download_non_ip,DIRECT
+  - RULE-SET,microsoft_cdn_non_ip,DIRECT
+  - RULE-SET,SteamRegionCheck,DIRECT
+  - RULE-SET,OneDrive,☁️ OneDrive
+  - RULE-SET,microsoft_non_ip,Ⓜ️ 微软服务
+  - RULE-SET,ai_non_ip,🤖 人工智能
+  - RULE-SET,stream_non_ip,🎥 海外媒体
+  - RULE-SET,global_non_ip, 🚀 节点选择
+  - RULE-SET,UserProxy_non_ip, 🚀 节点选择
+  - RULE-SET,domestic_non_ip,DIRECT
+  - RULE-SET,direct_non_ip,DIRECT
+  - RULE-SET,stream_ip,🎥 海外媒体
+  - RULE-SET,domestic_ip,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,china_ip,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY

@@ -4,6 +4,3 @@ DOMAIN-SUFFIX,services.googleapis.cn
 
 # OneDrive下载域名
 DOMAIN,cecil0321-my.sharepoint.com
-
-# EPIC下载
-DOMAIN,ipv4.egdownload.fastly-edge.com

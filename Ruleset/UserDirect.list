@@ -6,4 +6,4 @@ DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN,cecil0321-my.sharepoint.com
 
 # EPIC下载
-egdownload.fastly-edge.com
+DOMAIN-SUFFIX,egdownload.fastly-edge.com

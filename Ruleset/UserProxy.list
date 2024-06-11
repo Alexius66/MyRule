@@ -1,5 +1,8 @@
-#国内域名境外服务器
+# 国内域名境外服务器
 DOMAIN-SUFFIX,playgm.cn
 
-#机场
+# 机场
 DOMAIN-SUFFIX,mxwljsq.com
+
+# 微信FCM
+DOMAIN-SUFFIX,short.weixin.qq.com

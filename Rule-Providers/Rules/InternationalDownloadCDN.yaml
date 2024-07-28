@@ -1,16 +1,7 @@
 payload:
-  # Author: 可莉🅥
-  # GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/tool/Loon
-  # 引用: https://github.com/dogfight360/UsbEAm
-  # 2024-05-07 00:02:23
-
-  # 微软游戏下载、更新[国际]
-  - DOMAIN,assets1.xboxlive.com
-  - DOMAIN,assets2.xboxlive.com
-  - DOMAIN,ak.tiles.virtualearth.net
-  - DOMAIN,pf-cdn-content-prod.azureedge.net
-  - DOMAIN,xvcf1.xboxlive.com
-  - DOMAIN,xvcf2.xboxlive.com
+  # Author: Alexius66
+  # 引用: https://gitlab.com/lodepuly/vpn_tool/-/tree/master
+  # 2024-07-29
 
   # 微软全家桶上传、下载、同步、在线安装[国际]
   - DOMAIN,azurestackhubuat.download.prss.microsoft.com

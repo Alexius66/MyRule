@@ -1,7 +1,7 @@
 payload:
   # Author: Alexius66
   # 引用: https://gitlab.com/lodepuly/vpn_tool/-/tree/master
-  # 2024/7/29
+  # 2024-07-29
 
   # EPIC游戏下载、更新[中国]
   - DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
@@ -32,6 +32,10 @@ payload:
 
   # GOG游戏下载、更新[中国]
   # DOMAIN,gog.qtlglb.com
+  # GOG游戏下载、更新[国际]
+  - DOMAIN,gog-cdn-fastly-cp77.gog.com
+  - DOMAIN,gog-cdn-fastly.gog.com
+  - DOMAIN,gog-cdn-lumen.secure2.footprint.net
 
   # 微软商店游戏下载、应用下载、系统更新[中国]
   - DOMAIN,assets1.xboxlive.cn
@@ -48,11 +52,10 @@ payload:
 
   # UBisoft Connect(Uplay)育碧游戏下载、更新[中国]
   - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
-  
-  # GOG游戏下载、更新[国际]
-  - DOMAIN,gog-cdn-fastly-cp77.gog.com
-  - DOMAIN,gog-cdn-fastly.gog.com
-  - DOMAIN,gog-cdn-lumen.secure2.footprint.net
+  # UBisoft Connect(Uplay)育碧游戏下载、更新[国际]
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
+  - DOMAIN,uplaypc-s-ubisoft-ww.cdn.ubi.com
+
 
   # Origin艺电游戏平台[国际]
   - DOMAIN,download.dm.origin.com

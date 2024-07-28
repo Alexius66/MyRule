@@ -38,6 +38,13 @@ payload:
   - DOMAIN,assets2.xboxlive.cn
   - DOMAIN,dl.delivery.mp.microsoft.com
   - DOMAIN,tlu.dl.delivery.mp.microsoft.com
+  # 微软游戏下载、更新[国际]
+  - DOMAIN,assets1.xboxlive.com
+  - DOMAIN,assets2.xboxlive.com
+  - DOMAIN,ak.tiles.virtualearth.net
+  - DOMAIN,pf-cdn-content-prod.azureedge.net
+  - DOMAIN,xvcf1.xboxlive.com
+  - DOMAIN,xvcf2.xboxlive.com
 
   # UBisoft Connect(Uplay)育碧游戏下载、更新[中国]
   - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn

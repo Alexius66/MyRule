@@ -1,0 +1,69 @@
+payload:
+  # Author: Alexius66
+  # 引用: https://gitlab.com/lodepuly/vpn_tool/-/tree/master
+  # 2024/7/29
+
+  # EPIC游戏下载、更新[中国]
+  - DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
+  # EPIC游戏下载、更新[国际]
+  - DOMAIN,download.epicgames.com
+  - DOMAIN,download2.epicgames.com
+  - DOMAIN,download3.epicgames.com
+  - DOMAIN,download4.epicgames.com
+  - DOMAIN,epicgames-download1.akamaized.net
+  - DOMAIN,fastly-download.epicgames.com
+  - DOMAIN,ipv4.egdownload.fastly-edge.com
+  - DOMAIN-KEYWORD,epicgames-download
+  - AND,((DOMAIN-KEYWORD,cdn),(DOMAIN-KEYWORD,-epicgames-))
+
+  # Battle.net 战网游戏下载、更新[中国]
+  # DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
+  # DOMAIN,client05.pdl.wow.battlenet.com.cn
+  # DOMAIN,client02.pdl.wow.battlenet.com.cn
+  # DOMAIN,client02-cm.pdl.wow.battlenet.com.cn
+  # Battle.net战网游戏下载、更新[国际]
+  - DOMAIN,blzddist1-a.akamaihd.net
+  - DOMAIN,blzddistkr1-a.akamaihd.net
+  - DOMAIN,blizzard.gcdn.cloudn.co.kr
+  - DOMAIN,eu.cdn.blizzard.com
+  - DOMAIN,kr.cdn.blizzard.com
+  - DOMAIN,level3.blizzard.com
+  - DOMAIN,us.cdn.blizzard.com
+
+  # GOG游戏下载、更新[中国]
+  # DOMAIN,gog.qtlglb.com
+
+  # 微软商店游戏下载、应用下载、系统更新[中国]
+  - DOMAIN,assets1.xboxlive.cn
+  - DOMAIN,assets2.xboxlive.cn
+  - DOMAIN,dl.delivery.mp.microsoft.com
+  - DOMAIN,tlu.dl.delivery.mp.microsoft.com
+
+  # UBisoft Connect(Uplay)育碧游戏下载、更新[中国]
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+  
+  # GOG游戏下载、更新[国际]
+  - DOMAIN,gog-cdn-fastly-cp77.gog.com
+  - DOMAIN,gog-cdn-fastly.gog.com
+  - DOMAIN,gog-cdn-lumen.secure2.footprint.net
+
+  # Origin艺电游戏平台[国际]
+  - DOMAIN,download.dm.origin.com
+  - DOMAIN,origin-a.akamaihd.net
+  - DOMAIN,ssl-lvlt.cdn.ea.com
+
+  # EA Desktop游戏下载[国际]
+  - DOMAIN,origin-a.akamaihd.net
+  - DOMAIN,ssl-lvlt.cdn.ea.com
+
+  # Riot游戏下载、更新[国际]
+  - DOMAIN,bacon.secure.dyn.riotcdn.net
+  - DOMAIN,bacon.dyn.riotcdn.net
+  - DOMAIN,ks-foundation.secure.dyn.riotcdn.net
+  - DOMAIN,ks-foundation.dyn.riotcdn.net
+  - DOMAIN,lol.secure.dyn.riotcdn.net
+  - DOMAIN,lol.dyn.riotcdn.net
+  - DOMAIN,riot-client.secure.dyn.riotcdn.net
+  - DOMAIN,riot-client.dyn.riotcdn.net
+  - DOMAIN,valorant.secure.dyn.riotcdn.net
+  - DOMAIN,valorant.dyn.riotcdn.net
